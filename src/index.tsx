@@ -3,6 +3,7 @@ import './style.css';
 import StyledApp from './styled-App';
 import TopBar from './components/top-bar';
 import Hero from './components/Hero';
+import Story from './components/Story';
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
         <span>Contact</span>
       </TopBar>
       <Hero />
+      <Story />
     </StyledApp>
   );
 }

@@ -4,6 +4,7 @@ export const StyledHero = styled.div`
   display: flex;
   flex-direction: row;
   gap: 32px;
+  margin: 0 15%;
 `;
 
 export const StyledLeftHero = styled.div`

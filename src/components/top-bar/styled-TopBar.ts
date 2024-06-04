@@ -4,6 +4,7 @@ export const StyledTopBar = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 32px;
 `;
 
 export const StyledIcon = styled.div`
@@ -12,7 +13,8 @@ export const StyledIcon = styled.div`
   gap: 16px;
   align-items: center;
   img {
-    border-radius: 50px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 25px;
     width: 40px;
   }
 `;
