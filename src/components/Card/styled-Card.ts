@@ -22,7 +22,7 @@ export const StyledChildren = styled.div`
 `;
 
 export const StyledCard = styled.div`
-  @keyframes image-zoom-in {
+  @keyframes image-zoom {
     from {
       background-size: 110%;
     }
@@ -30,12 +30,13 @@ export const StyledCard = styled.div`
       background-size: 150%;
     }
   }
-  @keyframes image-zoom-out {
+
+  @keyframes open-card {
     from {
-      background-size: 150%;
+      background-size: 110%;
     }
     to {
-      background-size: 110%;
+      background-size: 150%;
     }
   }
 
@@ -48,18 +49,24 @@ export const StyledCard = styled.div`
   background-size: 110%;
   background-repeat: no-repeat;
   border-top-right-radius: 25px;
-  animation: image-zoom-out;
-  animation-duration: 2s;
-  background-size: 110%;
+  animation: image-zoom;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  &:nth-of-type(2n) {
+    animation-duration: 30s;
+    animation-direction: alternate-reverse;
+  }
 
   .card-content {
     display: none;
   }
 
   &:hover {
-    animation: image-zoom-in;
-    animation-duration: 6s;
-    background-size: 150%;
+    /* animation: image-zoom;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
 
     ${StyledChildren} {
       padding-bottom: 16px;

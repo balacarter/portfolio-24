@@ -1,6 +1,7 @@
 :root {
-	--primary-color: #052729;
-	--secondary-color: #fff9d8;
+	--primary-color: #021e20;
+	--secondary-color: rgb(255, 249, 216);
+	--shadow-color: rgba(255, 249, 216, 0.725);
 	--tertiary-color: #272727;
 
 	font-family: "Source Code Pro", monospace;

@@ -7,16 +7,51 @@ import {
   StyledSubHeading,
   StyledTechStack,
   StyledTechStackItem,
+  StyledLargeSubContent,
+  StyledSmallSubContent,
+  StyledHeroImageLarge,
+  StyledHeroImageSmall,
 } from './styled-Hero';
-import HeroImage from '../../assets/hero1.jpeg';
+import HeroImage from '../../assets/low-poly-mtn.png';
+import content from '../content';
+
+const TechStack = ({ stack }: { stack: string[] }) => {
+  return (
+    <>
+      {stack.map((item) => (
+        <StyledTechStackItem>{item}</StyledTechStackItem>
+      ))}
+    </>
+  );
+};
 
 const Hero = () => {
   return (
     <StyledHero>
       <StyledLeftHero>
-        <StyledHeroHeading>
-          I AM A FRONTEND ENGINEER WITH A PASSION FOR CODING AND CREATING.
-        </StyledHeroHeading>
+        <StyledHeroImageSmall>
+          <StyledHeroImage src={HeroImage} />
+        </StyledHeroImageSmall>
+        <StyledHeroHeading
+          dangerouslySetInnerHTML={{ __html: content.heroHeading }}
+        />
+        <StyledLargeSubContent>
+          <StyledSubHeading
+            dangerouslySetInnerHTML={{ __html: content.heroSubHeading }}
+          />
+          <StyledDivider />
+          <div>
+            <h3>// Tech Stack</h3>
+            <StyledTechStack>
+              <TechStack stack={content.techStack} />
+            </StyledTechStack>
+          </div>
+        </StyledLargeSubContent>
+      </StyledLeftHero>
+      <StyledHeroImageLarge>
+        <StyledHeroImage src={HeroImage} />
+      </StyledHeroImageLarge>
+      <StyledSmallSubContent>
         <StyledSubHeading>
           Originally trained in coding, I ventured into the world of design to
           create seamless user experiences. My journey led me to specialize in
@@ -37,10 +72,7 @@ const Hero = () => {
             <StyledTechStackItem>WebPack</StyledTechStackItem>
           </StyledTechStack>
         </div>
-      </StyledLeftHero>
-      <div>
-        <StyledHeroImage src={HeroImage} />
-      </div>
+      </StyledSmallSubContent>
     </StyledHero>
   );
 };
