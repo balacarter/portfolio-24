@@ -1,4 +1,5 @@
 import { StyledDivider } from '../Hero/styled-Hero';
+import ScrollBlock from '../ScrollBlock';
 import HorizontalLine from './HorizontalLine/horizontalLine';
 import {
   StyledItemContent,
@@ -55,6 +56,7 @@ const Timeline = () => (
     </StyledTimelineItems>
     <HorizontalLine />
     <VerticalLine />
+    <ScrollBlock />
   </StyledTimeLinePage>
 );
 
