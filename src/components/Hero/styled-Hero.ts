@@ -86,10 +86,6 @@ export const StyledHeroImage = styled.img`
       transform: translate(0, -0px);
     }
   }
-
-  @media (width >= 992px) {
-    margin-left: 30px;
-  }
 `;
 
 export const StyledHeroImageSmall = styled.div`
@@ -106,6 +102,9 @@ export const StyledHeroImageLarge = styled.div`
   @media (width >= 992px) {
     display: block;
     flex: 0.5;
+    img {
+      margin: 10% 0 0 30px;
+    }
   }
 `;
 
