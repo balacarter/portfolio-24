@@ -1,16 +1,20 @@
-import { StyledCard, StyledChildren, StyledDragBar } from './styled-Card';
+import { JSX } from 'preact/jsx-runtime';
+import { StyledCard } from './styled-Card';
 
-const Card = ({ image, children }) => {
-  return (
-    <StyledCard style={{ backgroundImage: `url(${image})` }}>
-      <StyledChildren>
-        <StyledDragBar>
-          <div></div>
-        </StyledDragBar>
-        {children}
-      </StyledChildren>
-    </StyledCard>
-  );
-};
+interface CardProps {
+  title?: JSX.Element;
+  subtitle?: JSX.Element;
+  body?: JSX.Element;
+  image?: JSX.Element;
+}
+
+const Card = ({ title, subtitle, body, image }: CardProps) => (
+  <StyledCard>
+    {image}
+    {title}
+    {subtitle}
+    {body}
+  </StyledCard>
+);
 
 export default Card;

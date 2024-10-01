@@ -5,6 +5,7 @@ import TopBar from './components/top-bar';
 import Hero from './components/Hero';
 import Story from './components/Story';
 import Timeline from './components/Timeline';
+import EducationPage from './components/Education';
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
       </TopBar>
       <Hero />
       <Timeline />
+      <EducationPage />
       {/* <Story /> */}
     </StyledApp>
   );

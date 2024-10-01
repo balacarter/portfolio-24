@@ -11,6 +11,10 @@ export const StyledTimeLinePage = styled.div`
   min-height: 100vh;
   background-color: var(--secondary-color);
 
+  h1 {
+    text-align: center;
+  }
+
   ${HorizontalLine} {
     display: none;
   }
