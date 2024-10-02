@@ -5,9 +5,10 @@ import { StyledCards, StyledEducationPage } from './styled-Education';
 const EducationPage = () => {
   return (
     <StyledEducationPage>
+      <GeometricImage />
+      <h1>EDUCATION</h1>
       <StyledCards>
         <Card
-          image={<GeometricImage />}
           title={<h1>B.S in Computer Science</h1>}
           subtitle={
             <>

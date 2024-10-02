@@ -1,4 +1,4 @@
-import Card from '../Card';
+import Card from '../ImageCard';
 import CardImage1 from '../../assets/card1.jpeg';
 import CardImage2 from '../../assets/card2.jpeg';
 import CardImage3 from '../../assets/card3.jpeg';

@@ -56,7 +56,7 @@ const Timeline = () => (
     </StyledTimelineItems>
     <HorizontalLine />
     <VerticalLine />
-    <ScrollBlock />
+    {/* <ScrollBlock /> */}
   </StyledTimeLinePage>
 );
 

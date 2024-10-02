@@ -1,5 +1,8 @@
-const GeometricImage = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 400 400"
+    style="max-width: 100%; width: 100%;"
+  >
     <g>
       <path
         fill="none"
@@ -45,6 +48,3 @@ const GeometricImage = () => (
       ></path>
     </g>
   </svg>
-);
-
-export default GeometricImage;

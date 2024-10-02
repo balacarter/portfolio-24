@@ -5,10 +5,16 @@ export const StyledTopBar = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 32px;
+  padding: 16px 32px;
   position: fixed;
   width: fill-available;
   width: -moz-available;
+  overflow: hidden;
+  z-index: 5;
+
+  &.scrolled {
+    backdrop-filter: blur(30px) saturate(120%);
+  }
 `;
 
 export const StyledIcon = styled.div`
