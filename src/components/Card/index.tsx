@@ -10,10 +10,12 @@ interface CardProps {
 
 const Card = ({ title, subtitle, body, image }: CardProps) => (
   <StyledCard>
+    <div style={{ width: '100%' }}>
+      {title}
+      {subtitle}
+      {body}
+    </div>
     {image}
-    {title}
-    {subtitle}
-    {body}
   </StyledCard>
 );
 

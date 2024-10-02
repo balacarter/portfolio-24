@@ -9,14 +9,21 @@ export const StyledEducationPage = styled.div`
   min-height: 100vh;
   background-color: var(--primary-color);
   align-items: center;
+  gap: 128px;
   position: relative;
   overflow: hidden;
+  z-index: 2;
 
-  svg {
+  > h1 {
+    margin-top: 64px;
+  }
+
+  > svg {
     position: absolute;
-    width: 130%;
+    width: 140%;
     opacity: 30%;
-    top: -40px;
+    top: -250px;
+    z-index: 1;
   }
 `;
 
@@ -26,24 +33,26 @@ export const StyledTitle = styled.h1`
 
 export const StyledCards = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  margin-top: 60px;
-  gap: 100px;
+  flex-flow: column;
+  gap: 64px;
   justify-content: center;
+  z-index: 2;
+  max-width: 600px;
 
   ${StyledCard} {
-    border: 1px solid var(--secondary-color);
-    flex-basis: 40%;
-    background: none;
-
-    &:nth-of-type(2n) {
-      text-align: end;
-    }
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 
     h2 span {
       font-size: 18px;
       line-height: 22px;
       font-weight: 200;
+    }
+
+    svg {
+      width: 100px;
+      color: var(--primary-color);
     }
   }
 `;

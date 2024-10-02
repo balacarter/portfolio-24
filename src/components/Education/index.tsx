@@ -9,48 +9,30 @@ const EducationPage = () => {
       <h1>EDUCATION</h1>
       <StyledCards>
         <Card
-          title={<h1>B.S in Computer Science</h1>}
-          subtitle={
-            <>
-              <h2>
-                CSU: Los Angeles
-                <span> 2018 - 2021</span>
-              </h2>
-            </>
-          }
-        />
-        <Card
+          image={<GeometricImage />}
           title={<h1>CSU: Los Angeles</h1>}
           subtitle={
             <>
               <h2>
-                B.S Computer Science
+                B.S in Computer Science
                 <span> 2018 - 2021</span>
               </h2>
             </>
           }
+          body={<span>3.5 GPA | Dean's list | Cum Laude</span>}
         />
         <Card
-          title={<h1>CSU: Los Angeles</h1>}
+          image={<GeometricImage />}
+          title={<h1>Pasadena City College</h1>}
           subtitle={
             <>
               <h2>
-                B.S Computer Science
-                <span> 2018 - 2021</span>
+                General Ed
+                <span> 2016 - 2018</span>
               </h2>
             </>
           }
-        />
-        <Card
-          title={<h1>CSU: Los Angeles</h1>}
-          subtitle={
-            <>
-              <h2>
-                B.S Computer Science
-                <span> 2018 - 2021</span>
-              </h2>
-            </>
-          }
+          body={<span>3.5 GPA | Dean's list</span>}
         />
       </StyledCards>
     </StyledEducationPage>

@@ -2,7 +2,7 @@ import { styled } from '@linaria/react';
 
 export const StyledCard = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 8px;
   padding: 16px;
   background-color: var(--primary-color);
