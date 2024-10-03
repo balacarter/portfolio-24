@@ -20,10 +20,17 @@ export const StyledEducationPage = styled.div`
 
   > svg {
     position: absolute;
-    width: 140%;
-    opacity: 30%;
-    top: -250px;
+    width: 200vw;
+    opacity: 60%;
+    top: -1vw;
     z-index: 1;
+  }
+
+  @media (width >= 992px) {
+    > svg {
+      width: 130vw;
+      top: -3vw;
+    }
   }
 `;
 
@@ -53,6 +60,10 @@ export const StyledCards = styled.div`
     svg {
       width: 100px;
       color: var(--primary-color);
+    }
+
+    &:last-of-type svg {
+      rotate: 35deg;
     }
   }
 `;

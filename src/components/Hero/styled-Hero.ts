@@ -6,12 +6,16 @@ export const StyledHero = styled.div`
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 16px;
-  margin: 5% 15% 0 15%;
+  margin: 8% 5% 0 5%;
   padding-bottom: 32px;
   min-height: 100vh;
 
   @media (width >= 1200px) {
     gap: 32px;
+  }
+
+  @media (width >= 992px) {
+    margin: 5% 15% 0 15%;
   }
 `;
 
